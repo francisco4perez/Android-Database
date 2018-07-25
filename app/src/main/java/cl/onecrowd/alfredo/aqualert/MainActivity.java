@@ -1,5 +1,6 @@
 package cl.onecrowd.alfredo.aqualert;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +12,7 @@ import cl.onecrowd.alfredo.aqualert.resource.dbFlow.MobUser;
 public class MainActivity extends AppCompatActivity {
 
     EditText name_txt, age_txt;
-    Button save_btn;
+    Button save_btn, view_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         name_txt = (EditText) findViewById(R.id.name_editText);
         age_txt = (EditText) findViewById(R.id.age_editText);
         save_btn = (Button) findViewById(R.id.save_button);
+        view_btn = (Button) findViewById(R.id.view_button);
 
         save_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +50,14 @@ public class MainActivity extends AppCompatActivity {
                 }
 
 
+            }
+        });
+
+        view_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent view_users = new Intent(getApplicationContext(), DatabaseView_activity.class);
+                startActivity(view_users);
             }
         });
 
