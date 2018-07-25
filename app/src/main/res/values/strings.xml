@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Aqualert</string>
+    <string name="hello_world">Hola Mundo!</string>
+    <string name="permision_denied">Permiso denegado... nuevo intento en 3 seg.</string>
+    <string name="arduino_attached">Arduino Conectado</string>
+    <string name="arduino_deatached">Arduino Desconectado!</string>
+    <string name="received">Recibido: </string>
+    <string name="OTG">Por favor conectar Arduino via USB.\nEn algunos dispositivos tendrá que habilitar almacenamiento OTG en Ajustes.\n\n</string>
+    <string name="attached_devices">Dispositivos Vinculados</string>
+    <string name="dato">Dato:</string>
+    <string name="take_measure">Tomar medición</string>
+    <string name="take_ph">De pH</string>
+    <string name="take_tur">De Turbidez</string>
+    <string name="load">Procesando...</string>
+    <string name="error">Error </string>
+    <string name="resultado_ph">Resultado PH:</string>
+    <string name="resultado_tur">Resultado Turbidez:</string>
+    <string name="ph_dangerous">Nivel de PH dañino para la salud.</string>
+    <string name="ph_warning">Nivel de PH NO óptimo para el consumo</string>
+    <string name="ph_good">Nivel de PH óptimo para el consumo</string>
+    <string name="tur_dangerous">Nivel de Turbidez dañino para la salud.</string>
+    <string name="tur_good">Nivel de Turbidez óptimo para el consumo</string>
+</resources>
